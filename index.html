@@ -1,21 +1,70 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/styles.css">
-
-<title>Responsive Layout</title>
-
-</head>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>David Chu's China Bistro</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+  </head>
 <body>
-<h1>Our Menu</h1>
+  <header>
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <div class="navbar-brand">
+            <a href="index.html"><h1>Food, LLC</h1></a>
+          </div>
 
-<div class="row">
-  <div class="col-wd-1 col-tb-1 col-mb-1 b "><h2 id="p1">Chicken</h2> <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sollicitudin sapien sed tortor ultrices varius. Duis tempor nisl a dictum vehicula. Sed pretium nunc consectetur, aliquam ligula vel, feugiat libero. Duis et ante mauris. Vestibulum tortor dui, pulvinar a purus vitae, porttitor commodo tellus. Fusce quis sem blandit, congue orci id, egestas dui. Nulla facilisi.</span></div>
-  <div class="col-wd-2 col-tb-2 col-mb-2 b"><h2 id="p2">Beef</h2><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sollicitudin sapien sed tortor ultrices varius. Duis tempor nisl a dictum vehicula. Sed pretium nunc consectetur, aliquam ligula vel, feugiat libero. Duis et ante mauris. Vestibulum tortor dui, pulvinar a purus vitae, porttitor commodo tellus. Fusce quis sem blandit, congue orci id, egestas dui. Nulla facilisi.</span></div>
-  <div class="col-wd-3 col-tb-3 col-mb-3 b"><h2 id="p3">Sushi</h2><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sollicitudin sapien sed tortor ultrices varius. Duis tempor nisl a dictum vehicula. Sed pretium nunc consectetur, aliquam ligula vel, feugiat libero. Duis et ante mauris. Vestibulum tortor dui, pulvinar a purus vitae, porttitor commodo tellus. Fusce quis sem blandit, congue orci id, egestas dui. Nulla facilisi.</span></div>
-</div>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
 
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li>
+              <a href="#p1">
+                <br class=" hidden-xs  "> Chicken</a>
+            </li>
+            <li>
+              <a href="#p2">
+                <br class=" hidden-xs"> Beef</a>
+            </li>
+            <li>
+              <a href="#p3">
+                <br class=" hidden-xs"> Sushi</a>
+            </li>  
+          </ul><!-- #nav-list -->
+        </div><!-- .collapse .navbar-collapse -->
+      </div><!-- .container -->
+    </nav><!-- #header-nav -->
+  </header>
+ <div id="xs-deliver" class="text-center "><h1>Our Menu</h1></div>
+
+  <div id="main-content" class="container">
+    
+   <div class="row">
+     <div class="col "><h2 id="p1">Chicken</h2> <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sollicitudin sapien sed tortor ultrices varius. Duis tempor nisl a dictum vehicula. Sed pretium nunc consectetur, aliquam ligula vel, feugiat libero. Duis et ante mauris. Vestibulum tortor dui, pulvinar a purus vitae, porttitor commodo tellus. Fusce quis sem blandit, congue orci id, egestas dui. Nulla facilisi.Morbi quis congue arcu. Proin eu augue facilisis, sagittis odio sed, molestie arcu. Nullam id posuere erat. Proin accumsan, elit non hendrerit molestie, neque lorem posuere magna, in fermentum turpis nisi eget nulla. Quisque non velit dictum, efficitur nibh eget, ornare elit. Mauris ultrices porttitor cursus. Etiam id tortor eu enim consectetur faucibus. Mauris dui justo, dictum quis erat in, ultricies auctor dolor. Maecenas at tempor diam, non tempus erat. Suspendisse nisl velit, dignissim sit amet ex ac, imperdiet ultricies ipsum. Nunc rhoncus magna nisl, non semper erat cursus at. Pellentesque dignissim suscipit tellus eu dignissim. Praesent vitae justo molestie nibh commodo pellentesque. Etiam semper nunc et ultricies placerat. Pellentesque nec sapien tristique, lobortis nisi sed, euismod ipsum. Curabitur posuere enim at scelerisque facilisis.Vivamus cursus orci eget velit elementum vestibulum. Vestibulum aliquet, orci sit amet euismod ullamcorper, leo purus pellentesque est, id aliquam ex nunc nec justo. Cras ornare metus ac consequat euismod. Phasellus elementum fermentum magna, sed commodo nulla maximus nec. Etiam lobortis ac augue id faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla malesuada fermentum condimentum. Vivamus a iaculis magna. Mauris a nisi ac odio malesuada pulvinar vel vitae risus. Maecenas eget neque aliquet, congue eros eget, eleifend libero.</span></div>
+     </div>
+     <div class="row">
+     <div class="col"><h2 id="p2">Beef</h2><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sollicitudin sapien sed tortor ultrices varius. Duis tempor nisl a dictum vehicula. Sed pretium nunc consectetur, aliquam ligula vel, feugiat libero. Duis et ante mauris. Vestibulum tortor dui, pulvinar a purus vitae, porttitor commodo tellus. Fusce quis sem blandit, congue orci id, egestas dui. Nulla facilisi.Morbi quis congue arcu. Proin eu augue facilisis, sagittis odio sed, molestie arcu. Nullam id posuere erat. Proin accumsan, elit non hendrerit molestie, neque lorem posuere magna, in fermentum turpis nisi eget nulla. Quisque non velit dictum, efficitur nibh eget, ornare elit. Mauris ultrices porttitor cursus. Etiam id tortor eu enim consectetur faucibus. Mauris dui justo, dictum quis erat in, ultricies auctor dolor. Maecenas at tempor diam, non tempus erat. Suspendisse nisl velit, dignissim sit amet ex ac, imperdiet ultricies ipsum. Nunc rhoncus magna nisl, non semper erat cursus at. Pellentesque dignissim suscipit tellus eu dignissim. Praesent vitae justo molestie nibh commodo pellentesque. Etiam semper nunc et ultricies placerat. Pellentesque nec sapien tristique, lobortis nisi sed, euismod ipsum. Curabitur posuere enim at scelerisque facilisis.Vivamus cursus orci eget velit elementum vestibulum. Vestibulum aliquet, orci sit amet euismod ullamcorper, leo purus pellentesque est, id aliquam ex nunc nec justo. Cras ornare metus ac consequat euismod. Phasellus elementum fermentum magna, sed commodo nulla maximus nec. Etiam lobortis ac augue id faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla malesuada fermentum condimentum. Vivamus a iaculis magna. Mauris a nisi ac odio malesuada pulvinar vel vitae risus. Maecenas eget neque aliquet, congue eros eget, eleifend libero.</span></div>
+      </div>
+      <div class="row">
+     <div class="col"><h2 id="p3">Sushi</h2><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sollicitudin sapien sed tortor ultrices varius. Duis tempor nisl a dictum vehicula. Sed pretium nunc consectetur, aliquam ligula vel, feugiat libero. Duis et ante mauris. Vestibulum tortor dui, pulvinar a purus vitae, porttitor commodo tellus. Fusce quis sem blandit, congue orci id, egestas dui. Nulla facilisi.Morbi quis congue arcu. Proin eu augue facilisis, sagittis odio sed, molestie arcu. Nullam id posuere erat. Proin accumsan, elit non hendrerit molestie, neque lorem posuere magna, in fermentum turpis nisi eget nulla. Quisque non velit dictum, efficitur nibh eget, ornare elit. Mauris ultrices porttitor cursus. Etiam id tortor eu enim consectetur faucibus. Mauris dui justo, dictum quis erat in, ultricies auctor dolor. Maecenas at tempor diam, non tempus erat. Suspendisse nisl velit, dignissim sit amet ex ac, imperdiet ultricies ipsum. Nunc rhoncus magna nisl, non semper erat cursus at. Pellentesque dignissim suscipit tellus eu dignissim. Praesent vitae justo molestie nibh commodo pellentesque. Etiam semper nunc et ultricies placerat. Pellentesque nec sapien tristique, lobortis nisi sed, euismod ipsum. Curabitur posuere enim at scelerisque facilisis.Vivamus cursus orci eget velit elementum vestibulum. Vestibulum aliquet, orci sit amet euismod ullamcorper, leo purus pellentesque est, id aliquam ex nunc nec justo. Cras ornare metus ac consequat euismod. Phasellus elementum fermentum magna, sed commodo nulla maximus nec. Etiam lobortis ac augue id faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla malesuada fermentum condimentum. Vivamus a iaculis magna. Mauris a nisi ac odio malesuada pulvinar vel vitae risus. Maecenas eget neque aliquet, congue eros eget, eleifend libero.</span></div>
+    </div>
+  </div>
+
+
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
